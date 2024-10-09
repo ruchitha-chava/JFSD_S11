@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://plus.unsplash.com/premium_photo-1681422570054-9ae5b8b03e46?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2glMjBhcHB8ZW58MHx8MHx8fDA%3D'); /* Add your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: white;
+            margin: 10px 0;
+        }
+
+        table {
+            margin: 20px auto;
+            width: 60%;
+            color: white;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .register-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .register-btn:hover {
+            background-color: #45a049;
+        }
+
+        .back-arrow {
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 50px;
+        }
+
+        .back-arrow a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 20px;
+        }
+
+        .logout-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .logout-button:hover {
+            background-color: #45a049;
+        }
+
+        .registered-events-btn-bottom {
+            display: block;
+            margin: 20px auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .details-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Inner spacing */
+            max-width: 400px; /* Set max width */
+            margin: 0 auto; /* Center the box */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+        }
+
+        .registered-events-btn-bottom:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="back-arrow">
+        <a href="studentlogin.html">&larr; Student Sphere</a>
+    </div>
+
+    <button class="logout-button" onclick="window.location.href='index.html'">Logout</button>
+
+    <div class="details-container">
+        <header>
+            <h1>Events</h1>
+        </header>
+       <br>
+        <table>
+            <tr>
+                <th>CATEGORY</th>
+                <th>NAME</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>CLUB</td>
+                <td>The Great Brain Puzzle</td>
+                <td><button class="register-btn" onclick="window.location.href='regsuccess.html'">Register</button></td>
+            </tr>
+            <tr>
+                <td>CLUB</td>
+                <td>ATS Score Checker</td>
+                <td><button class="register-btn" onclick="window.location.href='regsuccess.html'">Register</button></td>
+            </tr>
+            <tr>
+                <td>SPORTS</td>
+                <td>Throwball Selections</td>
+                <td><button class="register-btn" onclick="window.location.href='regsuccess.html'">Register</button></td>
+            </tr>
+            <tr>
+                <td>SIL</td>
+                <td>Guardians of the Network</td>
+                <td><button class="register-btn" onclick="window.location.href='regsuccess.html'">Register</button></td>
+            </tr>
+        </table>
+     <br>   
+        <button class="registered-events-btn-bottom" onclick="window.location.href='registeredevents.html'">Registered Events</button>
+    </div>
+</body>
+</html>
